@@ -6,7 +6,7 @@ COPY ./custom-php.ini /usr/local/etc/php/conf.d/
 COPY --from=wordpress:latest /usr/src/wordpress/ /var/www/html/
 
 # Copy theout Wordpress files
-COPY ./wp-config.php /var/www/html/
+#COPY ./wp-config.php /var/www/html/
 COPY ./.htaccess /var/www/html/
 # COPY ./wp-content/ /var/www/html/wp-content/
 
